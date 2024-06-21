@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>WeatherVue</h1>
+        <div class="location-input">
+            <input type="text" id="location-input" placeholder="Enter city name">
+            <button id="change-location">Change Location</button>
+        </div>
+        <div id="error-message" class="hidden">City not found. Please enter another city.</div>
+        <div class="weather-info">
+            <h2 id="location">Loading...</h2>
+            <div id="current-weather">
+                <p id="description"></p>
+                <p id="temperature"></p>
+                <img id="weather-icon" alt="Weather Icon">
+                <div id="extra-info">
+                    <p id="humidity" class="hidden"></p>
+                    <p id="wind" class="hidden"></p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="toggle-humidity">Toggle Humidity</button>
+                <button id="toggle-wind">Toggle Wind</button>
+            </div>
+            <div id="forecast">
+                <!-- Forecast will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
